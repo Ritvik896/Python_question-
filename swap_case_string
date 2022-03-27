@@ -1,0 +1,23 @@
+def swap_case(s):
+    newstr=""
+    for i in s:
+        if i.islower():
+            newstr=newstr+i.upper()
+        else:
+            newstr=newstr+i.lower()
+            
+    return newstr
+    # new_string = ""
+    # for i in range(len(s)):
+    #     if(s[i]>='a' and s[i]<='z'):
+    #         new_string = new_string + chr(ord(s[i])+32)
+    #     elif(s[i]>='A' and s[i]<='Z'):
+    #         new_string = new_string + chr(ord(s[i])-32)
+    #     else:
+    #         new_string = new_string+ s[i]    
+    # return new_string
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
